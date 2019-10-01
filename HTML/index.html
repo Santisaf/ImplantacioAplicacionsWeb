@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pagina inicial</title>
+	<link rel="stylesheet" href="">
+	<style>
+			table,th,td{			
+			border: 1px solid black;
+		    border-collapse: collapse;
+			padding: 8px;
+			text-align: center;
+		}
+		tr{
+			height: 40px;
+		}
+		.dades{
+			background-color: green;
+		}
+		.sistemes{
+			background-color: aqua;
+		}
+		.xarxes{
+			background-color: aqua;
+		}
+		.fol{
+			background-color: teal;
+		}
+		.marques{
+			background-color: purple;
+		}
+		.fonaments{
+			background-color: fuchsia;
+		}
+		.esplai{
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>Página inicial</h1>
+	<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti culpa incidunt quidem eaque! Vel neque laudantium suscipit a alias quos aliquid, omnis quia, impedit molestias ullam vitae temporibus cum aperiam!</h3>
+
+	<!--   TEXT MARKUP   -->
+	<div>
+	   <hr>
+	   <br>
+	    <h4>TEXT MARKUP</h4>
+	    <em>Etiqueta em</em>
+        <blockquote>Etiqueta blockquote</blockquote>
+	    <strong>Etiqueta strong</strong>
+        <q>Etiqueta q</q>		
+        <abbr>Etiqueta abbr</abbr>
+		<acronym>Etiqueta acronym</acronym>
+		<address>Etiqueta address</address>
+		<pre>Etiqueta pre</pre>
+		<dfn>Etiqueta dfn</dfn>
+		<code>Etiqueta code</code>
+		<cite>Etiqueta cite</cite>
+		<del>Etiqueta del</del>
+		<ins>Etiqueta ins</ins>
+		<sub>Etiqueta sub</sub>
+		<sup>Etiqueta sup</sup>
+		<bdo>Etiqueta bdo</bdo>	
+	</div>
+
+	<!--   LINKS   -->
+	<div>
+	   <hr>
+	   <br>
+		<h4>LINKS</h4>	
+		<ul>
+		<li><a href="https://www.google.es/" target="_blanc">Google</a></li>
+		<li><a href="https://www.marca.com/" target="_parent">Marca</a></li>
+		<li><a href="https://elpais.com/" target="_self">El Pais</a></li>
+		<li><a href="https://www.youtube.com/?gl=ES&hl=es" target="_top">Youtube</a></li>
+		</ul>
+     </div>
+
+     <!--   FORMULARIO   -->
+	<div>
+	   <hr>
+	   <br>
+		<h4>FORMULARIO</h4>	
+		<form>
+		<label for="nom">nom</label>
+		<input type="text" name="nom" id="nom"></input>
+		<label for="llinatge">llinatge</label>
+		<input type="text" name="llinatge" id="nom"></input>
+		<label for="email">email</label>
+		<input type="email" name="email" id="email"></input>
+		<label for="numero">numero</label>
+		<input type="number" name="numero" id="numero"></input>
+		<label for="url">url</label>
+		<input type="url" name="url" id="url"></input>
+		<input type="submit" value="entrar">		
+	    </form>
+    </div>
+
+     <!--   IMAGEN   -->
+       <hr>
+       <br/>    
+       <h4 style="text-align: center">Imagenes</h4>
+	   <div style="margin-left: 40%"> 	
+	   <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Aldrin_Apollo_11.jpg" alt="imatge library" width="300" height="200" />
+	   <figcaption>Imatge de 2700x2700 px ( 7,2megapixels ) modificada a 300x200</figcaption>
+	   <br/>
+	   <img src="https://www.croptecshow.com/wp-content/uploads/2017/05/Rezatec-logo-300x200px.jpg"/>
+	   <figcaption>Imatge 300x200 px</figcaption>
+	   <br/>	  
+	   <div/>
+
+
+     <!--   TABLA  -->
+       <hr>
+       <br/>    
+       <h4 style="text-align: center">Imagenes</h4>
+       <div>
+	   <table >
+       <tr>
+    <th>Dilluns</th>
+    <th>Dimarts</th> 
+    <th>Dimecres</th>
+    <th>Dijous</th>
+    <th>Divendres</th>
+  </tr>
+  <tr>
+    <td rowspan="3" class="dades">Serveis de xarxa i internet</td>
+    <td rowspan="3" class="sistemes">Implantació de sistemes operatius</td> 
+    <td rowspan="2" class="dades">Gestio de base de dades</td>
+    <td class="fol">Formacio i orientació laboral</td>
+    <td rowspan="3" class="dades">Gestio de base de dades</td>
+  </tr>
+  <tr>
+    <td rowspan="2" class="marques">Llenguatge de marques</td>
+  </tr>
+    <tr>
+    <td class="sistemes">Implantació de sistemes operatius</td> 
+  </tr>
+    <tr>
+    <td colspan="5" class="esplai">ESPLAI</td>
+  </tr>
+    <tr>
+    <td class="fol">Formacio i orientació laboral</td>
+    <td rowspan="3" class="fonaments">Fonaments de Hardware</td> 
+    <td class="sistemes">Implantació de sistemes operatius</td> 
+    <td rowspan="3" class="xarxes">Planificació de Xarxes</td>
+    <td rowspan="2" class="sistemes">Implantació de sistemes operatius</td> 
+  </tr>
+    <tr>
+    <td rowspan="2" class="xarxes">Planificació de Xarxes</td>
+    <td rowspan="2" class="marques">Llenguatge de marques</td>
+  </tr>
+    </tr>
+    <tr>
+  <td class="fol">Formacio i orientació laboral</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

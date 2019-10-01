@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACT04</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		
+//  PERÍMETRE
+
+costat=prompt("Escriu el costat d'un quadrat");
+
+var perimetre=parseInt(costat)*4
+
+//  SUMA I MULTIPLICACIÓ
+
+a=parseInt(prompt("Escriu el primer nombre"));
+b=parseInt(prompt("Escriu el segon nombre"));
+c=parseInt(prompt("Escriu el tercer nombre"));
+d=parseInt(prompt("Escriu el quart nombre"));
+
+var suma=a+b+c+d;
+var multiplicacio=a*b*c*d;
+
+//  PREU I QUANTITAT
+
+preu1=parseInt(prompt("Escriu el primer preu"));
+quantitat1=parseInt(prompt("Escriu la primera quantitat"));
+preu2=parseInt(prompt("Escriu el segon preu"));
+quantitat2=parseInt(prompt("Escriu la segona quantitat"));
+
+var total=(preu1*quantitat1)+(preu2*quantitat2);
+
+//  AREA TRIANGLE
+
+base=parseInt(prompt("Escriu la base del triangle"));
+altura=parseInt(prompt("Escriu l'altura del triangle"));
+
+var area=(base*altura)/2;
+
+
+//  IMPRIMIM PER PANTALLA ELS RESULTATS
+
+document.write('El perímetre és: ' + perimetre);
+document.write('<br>');
+document.write('La suma és: ' + suma);
+document.write('<br>');
+document.write('La multipliació és: ' + multiplicacio);
+document.write('<br>');
+document.write('El total del compte és: ' + total);
+document.write('<br>');
+document.write("L'area del triangle és: " + area);
+
+ </script>
+</body>
+</html>
+
+
+
