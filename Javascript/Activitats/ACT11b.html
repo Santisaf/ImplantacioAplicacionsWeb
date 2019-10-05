@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACT11b</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+ <script>
+ 	var idnumber=0,
+  	 	age=0,
+  	 	sex="",
+  	 	people=0,
+  	 	men=0,
+  	 	woman=0,
+  	 	workingmen=0,
+  	 	oldestwoman=0,
+  	 	youngestman=1000; 
+ 	   
+    do {
+        idnumber=parseInt(prompt("Escriu el idnumber"));	
+        if (idnumber==0) break;
+        age=parseInt(prompt("Escriu l'edat"));	
+        sex=prompt("Escriu el sexe ( male / female)");
+        if ( sex == "male"){;
+        	men++;
+               if ( age>=18 && age<=65 ){
+               workingmen++;  
+               }
+               if ( age < youngestman ){
+                 youngestman=idnumber;
+               }
+        }else if( sex == "female" ){
+            woman++;
+               if ( age > oldestwoman  ){
+                 oldestwoman=idnumber;
+               }
+        }  
+        people++;	
+
+       }while (true); 
+
+      document.write("How many people are there?  " + people);
+      document.write("<br>");
+      document.write("How many men are there?  " + men);
+      document.write("<br>");      
+      document.write("How many woman are there?  " + woman);
+      document.write("<br>");      
+      document.write("How many men are between 18 and 65 years old?  " + workingmen);
+      document.write("<br>");    
+      document.write("What is the id of the oldest woman?  " + oldestwoman);
+      document.write("<br>");   
+      document.write("What is the id of the youngest man?  " + youngestman);
+
+ </script>
+</body>
+</html>
+
+
+
+
+

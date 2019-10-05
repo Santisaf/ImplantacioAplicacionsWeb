@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACT10g</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+ <script>
+ 	var i=1,
+ 	    more500=0,
+ 	    more1000=0,
+ 	    total=0;
+ 	        
+    while (i < 6 ) {
+      salari=parseInt(prompt("Escriu un salari"));
+      total+=salari;
+      if ( salari >= 500 && salari <=1000 ){
+      	more500++;
+      }else if( salari > 1000 ){
+        more1000++;
+      }
+    i++; 
+    }
+    document.write("Salaris de treballadors entre 500 i 1000:  " + more500);
+    document.write("<br>");
+    document.write("Salaris de treballadors de més de 1000:  " + more1000);
+    document.write("<br>");
+    document.write("La suma de tots els salaris es:  " + total);
+
+ </script>
+</body>
+</html>
+
+
+
+
+

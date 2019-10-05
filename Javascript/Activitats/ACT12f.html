@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACT12f</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+ <script>
+       
+      var a=0,
+          positive=0,
+          negative=0,
+          odd=0,
+          sumpair=0;
+
+      for (let i=1 ; i<11 ; i++)  {
+             a=parseInt(prompt("Enter a number")); 
+           	 if ( a > 0 ){        	 	
+           	 	positive++;
+           	 }else if ( a < 0 ){
+           	 	negative++;
+           	 }
+             if ( a % 2 != 0 ){
+             	odd++;
+             }else{
+             	sumpair+=a
+             }  
+
+           }   
+
+      document.write("The positive numbers are  " + positive + "<br>");
+      document.write("The negative numbers are  " + negative + "<br>");
+      document.write("The odd numbers are  " + odd + "<br>");
+      document.write("The sum of the pair number are " + sumpair + "<br>");
+
+ </script>
+</body>
+</html>
+
+
+
+
+

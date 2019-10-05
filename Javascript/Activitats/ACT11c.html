@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACT11c</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+ <script>
+ 	var account=0,
+	 	client="",
+	 	money=0,
+	 	sumaccounts=0;
+ 	   
+    do {
+        account=parseInt(prompt("Account number? ( 0 exit )"));	
+        if (account==0) break;
+        client=prompt("Client name?");
+        money=parseInt(prompt("Money?"));	
+        
+      document.write(client + " is the owner of " + account + " account with " + money);
+      document.write("<br>"); 
+        sumaccounts+=money
+       }while (true); 
+      document.write("Total accounts is  " + sumaccounts);
+
+
+     
+
+ </script>
+</body>
+</html>
+
+
+
+
+
