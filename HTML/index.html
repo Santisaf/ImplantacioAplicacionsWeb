@@ -3,50 +3,53 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="HTML, Pruebas">
+	<meta name="description" content="Ejercicio Implantacions WEB">
+	<meta name="author" content="Santi Andreu">
+	<meta http-equiv="refresh" content="60">
 	<title>Pagina inicial</title>
-	<link rel="stylesheet" href="">
-	<style>
-			table,th,td{			
-			border: 1px solid black;
-		    border-collapse: collapse;
-			padding: 8px;
-			text-align: center;
+	<link rel="stylesheet" href="estilos.css">
+    <style type="text/css" media="screen">
+   
+    		h1{
+		   text-shadow: 3px 3px 2px #696;
+		   color: #666;
+		   background-color: #CCCCFF;
 		}
-		tr{
-			height: 40px;
-		}
-		.dades{
-			background-color: green;
-		}
-		.sistemes{
-			background-color: aqua;
-		}
-		.xarxes{
-			background-color: aqua;
-		}
-		.fol{
-			background-color: teal;
-		}
-		.marques{
-			background-color: purple;
-		}
-		.fonaments{
-			background-color: fuchsia;
-		}
-		.esplai{
-			background-color: yellow;
-		}
-	</style>
+    	.formulario{
+    		background-color: yellow;
+    	}
+    </style>
+  
 </head>
-<body>
-	<h1>Página inicial</h1>
-	<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti culpa incidunt quidem eaque! Vel neque laudantium suscipit a alias quos aliquid, omnis quia, impedit molestias ullam vitae temporibus cum aperiam!</h3>
+<body> 
+	<!--   HEADINGS  -->
+	<h1 style="text-align:center;">Página inicial</h1>
+    <h2 style="text-align:left;">Esto es un h2</h2>
+	<h3 style="font-family:verdana">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti culpa incidunt quidem eaque! Vel neque laudantium suscipit a alias quos aliquid, omnis quia, impedit molestias ullam vitae temporibus cum aperiam!</h3>
+	<h4 style="text-align:right;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et. Doloremque accusantium, commodi dignissimos, deserunt quidem ex atque odit!</h4>
+	<h5 style="text-align: justify;">Esto en un h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa error vel tempore, quam sequi, ad facilis cumque similique excepturi optio est, natus aut porro incidunt. Maiores sapiente distinctio, iusto soluta! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa error vel tempore, quam sequi, ad facilis cumque similique excepturi optio est, natus aut porro incidunt. Maiores sapiente distinctio, iusto soluta!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa error vel tempore, quam sequi, ad facilis cumque similique excepturi optio est, natus aut porro incidunt. Maiores sapiente distinctio, iusto soluta!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa error vel tempore, quam sequi, ad facilis cumque similique excepturi optio est, natus aut porro incidunt. Maiores sapiente distinctio, iusto soluta!</h5>
+	<h6>ES es un h6</h6>
+
+	<!-- PARAGRAPHS & TEXT FORMATING-->
+
+	<p>Lorem ipsum <b>dolor</b> sit amet,<i> consectetur </i> adipisicing elit. Vitae ex, labore laudantium, voluptates quia sint dolores fuga ipsam accusamus autem esse quibusdam iusto odit minima eligendi <ins>repellat</ins> officia perspiciatis    &nbsp;    rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium maxime nulla temporibus, unde voluptate? Debitis in perspiciatis quo ipsum id voluptates? Rem inventore minima assumenda quod eaque eos, harum.</p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus culpa, nobis, facilis fuga laborum aspernatur qui expedita voluptatibus odio tempora, soluta modi quasi illum veniam. Quisquam voluptatibus, sapiente doloremque inventore.</span>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Helio<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Neón<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Argón<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Kriptón<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Xenón<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Radón</p>
+    <p>Character Entities</p>
+    <p>&nbsp;&nbsp;&gt;&amp;&cent;&pound;&yen;&euro;&copy;&reg;</p>
+    <p>&forall;&part;&exist;&empty;&nabla;&isin;&notin;&ni;&prod;&sum;</p>
+    <p>&Alpha;&Beta;&Gamma;&Epsilon;&Zeta;&copy;&reg;&euro;&trade;&darr;&rarr;&hearts;</p>
 
 	<!--   TEXT MARKUP   -->
 	<div>
 	   <hr>
 	   <br>
-	    <h4>TEXT MARKUP</h4>
+	    <h4 id="tituloestilo" style="color:blue">TEXT MARKUP</h4>
 	    <em>Etiqueta em</em>
         <blockquote>Etiqueta blockquote</blockquote>
 	    <strong>Etiqueta strong</strong>
@@ -79,10 +82,11 @@
      </div>
 
      <!--   FORMULARIO   -->
-	<div>
+
+	<div class="formulario">
 	   <hr>
 	   <br>
-		<h4>FORMULARIO</h4>	
+		<h4>FORMULARIOS</h4>	
 		<form>
 		<label for="nom">nom</label>
 		<input type="text" name="nom" id="nom"></input>
@@ -96,18 +100,69 @@
 		<input type="url" name="url" id="url"></input>
 		<input type="submit" value="entrar">		
 	    </form>
-    </div>
+	    <br>
+	    <form  name="input" action="demo_form_action.asp" method="get">
+         Username: <input type="text" name="user"><br>
+        <input type="checkbox" name="espanol" value="sitio">Español
+        <input type="checkbox" name="mallorquin" value="sitio">Mallorquin
+        <br>
+        <input type="radio" name="sex" value="male">Male
+        <input type="radio" name="sex" value="female">Female<br>
+        <input type="submit" value="Submit">
+        <br>
+        <select>
+		  <optgroup label="Swedish Cars">
+		    <option value="volvo">Volvo</option>
+		    <option value="saab">Saab</option>
+		  </optgroup>
+		  <optgroup label="German Cars">
+		  	<datalist>
+		    <option value="mercedes">Mercedes</option>
+		    <option value="audi">Audi</option>
+		    </datalist>
+		  </optgroup>
+			</select>
+			<button type="button">Click Me!</button>
+        </form> 
+        <br>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+		  <input type="range" id="a" value="50">100
+		  +<input type="number" id="b" value="50">
+		  =<output name="x" for="a b"></output>
+		    <fieldset>
+		    <legend>Personalia:</legend>
+		    Name: <input type="text" size="30"><br>
+		    Email: <input type="text" size="30"><br>
+		    Date of birth: <input type="text" size="10">
+		  </fieldset>
+		  <textarea rows="4" cols="50">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis facere quia vitae dolorem debitis dicta tenetur tempora natus asperiores praesentium totam consectetur aut, officiis! Hic vitae alias provident, repellat!
+			</textarea>
+		</form>
+		    </div>
 
-     <!--   IMAGEN   -->
+     <!--   IMAGEN MAP IFRAME  -->
        <hr>
        <br/>    
-       <h4 style="text-align: center">Imagenes</h4>
-	   <div style="margin-left: 40%"> 	
+       <h4>Imagenes</h4>
+	   <div > 	
 	   <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Aldrin_Apollo_11.jpg" alt="imatge library" width="300" height="200" />
-	   <figcaption>Imatge de 2700x2700 px ( 7,2megapixels ) modificada a 300x200</figcaption>
+	   <figcaption>Imatge de 2700x2700 px MODIFICADA </figcaption>
 	   <br/>
 	   <img src="https://www.croptecshow.com/wp-content/uploads/2017/05/Rezatec-logo-300x200px.jpg"/>
 	   <figcaption>Imatge 300x200 px</figcaption>
+       <img src="https://live.staticflickr.com/5211/5490897041_e3fbb692f0.jpg" width="145" height="126" alt="Planets" usemap="#html4">
+
+      <map name="html4">
+     <area shape="rect" coords="0,0,82,126" href="https://www.flickr.com/photos/mephysto82/5490897041/lightbox/" alt="">
+
+		</map>
+		<br>
+		<iframe src="index.html">
+		</iframe>
+
+
+
 	   <br/>	  
 	   <div/>
 
@@ -115,9 +170,11 @@
      <!--   TABLA  -->
        <hr>
        <br/>    
-       <h4 style="text-align: center">Imagenes</h4>
+       <h4>Tabla</h4>
        <div>
-	   <table >
+	   <table border="1" style="background-color: #F0F0F0">
+	   	<caption style="font-size: 22px; color: blue; background-color: #C0C0C0">HORARI</caption>
+	   	<tbody>
        <tr>
     <th>Dilluns</th>
     <th>Dimarts</th> 
@@ -125,38 +182,84 @@
     <th>Dijous</th>
     <th>Divendres</th>
   </tr>
+  </tbody>
   <tr>
-    <td rowspan="3" class="dades">Serveis de xarxa i internet</td>
-    <td rowspan="3" class="sistemes">Implantació de sistemes operatius</td> 
-    <td rowspan="2" class="dades">Gestio de base de dades</td>
-    <td class="fol">Formacio i orientació laboral</td>
-    <td rowspan="3" class="dades">Gestio de base de dades</td>
+    <td rowspan="3">Serveis de xarxa i internet</td>
+    <td rowspan="3">Implantació Aplicacions web</td> 
+    <td rowspan="2">Empresa Emprenadora</td>
+    <td>Adm. Sistemes Operatius</td>
+    <td rowspan="3">Seguretat i alta disponibilitat</td>
   </tr>
   <tr>
-    <td rowspan="2" class="marques">Llenguatge de marques</td>
+    <td rowspan="2">Llenguatge de marques</td>
   </tr>
     <tr>
     <td class="sistemes">Implantació de sistemes operatius</td> 
   </tr>
     <tr>
-    <td colspan="5" class="esplai">ESPLAI</td>
+    <td colspan="5" style="text-align: center; background-color:rgb(255,0,0) ">ESPLAI</td>
   </tr>
     <tr>
-    <td class="fol">Formacio i orientació laboral</td>
-    <td rowspan="3" class="fonaments">Fonaments de Hardware</td> 
+    <td>Formacio i orientació laboral</td>
+    <td rowspan="3" >Fonaments de Hardware</td> 
     <td class="sistemes">Implantació de sistemes operatius</td> 
-    <td rowspan="3" class="xarxes">Planificació de Xarxes</td>
-    <td rowspan="2" class="sistemes">Implantació de sistemes operatius</td> 
+    <td rowspan="3">Planificació de Xarxes</td>
+    <td rowspan="2">Implantació de sistemes operatius</td> 
   </tr>
     <tr>
-    <td rowspan="2" class="xarxes">Planificació de Xarxes</td>
-    <td rowspan="2" class="marques">Llenguatge de marques</td>
+    <td rowspan="2">Planificació de Xarxes</td>
+    <td rowspan="2" >Llenguatge de marques</td>
   </tr>
     </tr>
     <tr>
-  <td class="fol">Formacio i orientació laboral</td>
+  <td >Formacio i orientació laboral</td>
   </tr>
+   <tfoot>
+    <tr>
+      <td>Tutoria</td>
+    </tr>
+  </tfoot>
 </table>
 </div>
+  <hr>
+  <br/> 
+  <!--   LISTAS  -->
+
+   <h2>Listas</h2>
+   <ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+   <dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+  </dl>
+
+  <!--   JAVASCRIPT -->
+   <br><hr><br>
+   <h2 style="text-align:center">Javascript</h2>
+  <button type="button" onclick="pulsar()">Pulsame!</button>
+  <p id="cambio" onmouseover="color()">Pasa por encima para cambiar de color</p>
+   <script>
+    	function pulsar(){
+           alert("Me has pulsado");
+    	}
+    	function color(){
+        console.log("estoy cambiando de color");
+        document.getElementById("cambio").style.color="#ff0000";
+    	}
+
+    </script>
+    <noscript>Your browser does not support JavaScript!</noscript>
 </body>
 </html>

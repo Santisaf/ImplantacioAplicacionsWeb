@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACT15a</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+ <script>
+           
+    var data=new Date;
+    var mes=data.getMonth()+1;
+    var term="";
+
+     if ( mes <=3 ) {
+       term="1st";
+    } else if ( mes <=6 )  {
+       term="2nd";
+    } else if ( mes <=9 )  {
+       term="3rd";
+    } else {
+       term="4th";
+    }
+    document.write("The recent term is " + term);
+
+    
+ </script>
+</body>
+</html>
+
+
+
+
+

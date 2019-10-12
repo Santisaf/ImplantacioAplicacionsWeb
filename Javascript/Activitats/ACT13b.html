@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACT13b</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+ <script>
+  var mesg="";
+       function order(a,b,c){
+          if ( a<b && a<c ){
+               if ( b < c){
+                mesg=a + " " + b + " " + c;
+               }else{
+                mesg=a + " " + c + " " + b;
+               }
+             } else if ( b<a && b<c ){
+               if ( a < c ){
+                  mesg=b + " " + a + " " + c;
+               }else{
+                  mesg=b + " " + c + " " + a;
+               }
+             } else {
+               if ( a < b ){
+                  mesg=c + " " + a + " " + b;
+               }else 
+                  mesg=c + " " + b + " " + a;  
+             }
+             return mesg
+           }
+
+    document.write("The order ascendent is: " + order(4,2,1));
+ </script>
+</body>
+</html>
+
+
+
+
+

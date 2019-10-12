@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACT16a</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+ <script>
+
+          function sum(numbers){
+            var suma=0;
+             for (let i=0;i<numbers.length;i++){
+                suma+=numbers[i];
+             }
+            return suma;
+          }
+
+          function average(numbers){
+            return sum(numbers)/numbers.length;
+          }
+
+          function sumH5(numbers){
+            var suma=0;
+             for (let i=0;i<numbers.length;i++){
+                if ( numbers[i]>5 ){ 
+                suma+=numbers[i];
+                }
+             }
+            return suma;
+          }
+
+          function numH5(numbers){
+            var num=0;
+             for (let i=0;i<numbers.length;i++){
+                if ( numbers[i]>5 ){ 
+                num++;
+                }
+             }
+            return num;
+          }
+
+
+          var numbers;
+          numbers=new Array(8);
+
+           for (let i=0;i<numbers.length;i++){
+             numbers[i]=parseInt(prompt("Enter a number"));
+          }
+           
+          document.write("The sum is " + sum(numbers) + "<br>");
+          document.write("The average is " + average(numbers) + "<br>");
+          document.write("The sum of the elements higher than 5 is " + sumH5(numbers) + "<br>");
+          document.write("Numbers higher than 5 " + numH5(numbers));    
+          
+ </script>
+</body>
+</html>
+
+
+
+
+

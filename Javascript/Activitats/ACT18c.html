@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACT18c</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+ <script>
+
+      function invertir(cadena) {
+      var x = cadena.length;
+      var cadenaInvertida = "";
+
+          while (x>=0) {
+          cadenaInvertida += cadena.charAt(x);
+            x--;
+           }
+
+      return cadenaInvertida;
+      }
+
+
+      var word=prompt("Enter a word");
+
+      if ( word == invertir(word) ){
+        document.write(" This word is a palindrome"); 
+      }else {
+        document.write(" This word isn't a palindrome"); 
+      }
+      
+
+ </script>
+</body>
+</html>
+
+
+
+
+

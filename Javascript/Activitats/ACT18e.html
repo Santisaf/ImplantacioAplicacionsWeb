@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACT18e</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+ <script>
+
+
+      var word=prompt("Enter a word");
+      var mitat="",
+      letras=word.length;
+
+      // HALF PART
+
+      for ( let i=0; i<letras/2; i++  ){
+        mitat+=word.charAt(i);
+      }
+      document.write("The first half part is " + mitat + "<br>");
+
+       // LAST CHAR   
+      
+      document.write("The last char is " + word.charAt(letras-1) + "<br>");
+
+       // REVERSE ORDER     
+
+         var cadenaInvertida = "";
+         var x=letras;
+
+          while (x>=0) {
+          cadenaInvertida += word.charAt(x);
+            x--;
+           }
+
+      document.write("The reverse order is " + cadenaInvertida + "<br>");
+
+       // CHAR SEPARATED WHITE SPACE  
+
+       var espacio=""
+         for ( let i=0; i<letras; i++  ){
+        espacio+=word.charAt(i)+" ";
+      }
+       
+      document.write("Separated by a white space: " + espacio + "<br>");
+
+       // VOWELS IN THE WORD
+
+      var numeroVocales = word.match(/[aeiou]/gi).length;
+
+      document.write("Vowels in the word: " + numeroVocales);
+
+ </script>
+</body>
+</html>
+
+
+
+
+

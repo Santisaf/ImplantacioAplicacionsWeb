@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACT14a</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+ <script>
+           
+       function Addition(value1,value2){
+              this.value1=value1;
+              this.value2=value2;
+          
+              this.loadValue1 = loadValue1;
+              function loadValue1(v){
+                   this.value1=v;
+              }
+
+              this.loadValue2 = loadValue2;
+              function loadValue2(v){
+                     this.value2=v;
+              }
+
+              this.result = result;
+              function result(){
+                    return this.value1+this.value2;
+              }       
+        }           
+
+        var a1 = new Addition(2,3);
+        document.write("Resultat de op 1 "+ a1.result() +"<br>");
+        document.write(a1.value1+" , "+a1.value2+"<br>");
+        a1.loadValue1(8);
+        document.write("Resultat de op 1 "+ a1.result()+"<br>");
+        document.write(a1.value1+" , "+a1.value2+"<br>");
+
+        var a2 = new Addition(12,13);
+        document.write("Resultat de op 2 "+ a2.result() +"<br>");
+ 
+ 
+
+ </script>
+</body>
+</html>
+
+
+
+
+

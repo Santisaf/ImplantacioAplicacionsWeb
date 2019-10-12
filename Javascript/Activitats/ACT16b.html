@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACT16b</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+ <script>
+
+
+          var N=parseInt(prompt("Enter a number ( size vector )"));
+
+          var numbers;
+          numbers=new Array(N);
+
+           for (let i=0;i<2;i++){
+             numbers[i]=parseInt(prompt("Enter number " + (i+1) + " "));
+          }
+
+          var sum=numbers[0]+numbers[1];
+
+           for (let i=2;i<numbers.length;i++){
+               numbers[i]=sum;
+            }
+
+          //    PRINT RESULT 
+
+            for (let i=0;i<numbers.length;i++){
+                document.write("The number " + i + " is " + numbers[i] + "<br>");
+            }
+             
+             var suma=0;
+             for (let i=0;i<numbers.length;i++){
+                suma+=numbers[i];
+             }  
+              document.write("The sum is " + suma + "<br>"); 
+
+ </script>
+</body>
+</html>
+
+
+
+
+
