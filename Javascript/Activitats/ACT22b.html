@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ACT22b</title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+ <script type="text/javascript"> 
+function calculate() {
+
+ var sel1 = document.getElementById('select1');
+ var a = parseInt(sel1.options[sel1.selectedIndex].value);
+
+ var sel2 = document.getElementById('select2');
+ var b = parseInt(sel2.options[sel2.selectedIndex].value);
+  
+ var sel3 = document.getElementById('select3');
+ var c = parseInt(sel3.options[sel3.selectedIndex].value);
+
+ document.getElementById('text').value=a+b+c;
+}
+</script>
+<br>
+<form> Processor 
+ <select id="select1">
+ <option value="400">Intel I3 - $400</option>
+ <option value="600">Intel I5 $600</option>
+ <option value="800">Intel I7 $800</option>
+ </select> Monitor 
+  <select id="select2">
+ <option value="250">Samsung 20' - $250</option>
+ <option value="350">Samsung 22' - $350</option>
+ <option value="550">Samsung 26' - $550</option>
+ </select> Hard Disk 
+  <select id="select3" >
+ <option value="300">500 Gb - $300</option>
+ <option value="440">1 Tb - $440</option>
+ <option value="500">3 Tb - $500</option>
+ </select>
+ <br>
+ <br>
+ <input type="button" id="button" value="Calculate" onclick="calculate()"> Total is: 
+ <input type="text" id="text"><br>
+</form>
+</body>
+</html>
+
