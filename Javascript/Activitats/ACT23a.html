@@ -10,18 +10,18 @@
  <script type="text/javascript"> 
 
 function countSelected() {
- var cant=0;
+  var msg="";
  if (document.getElementById('checkbox1').checked) {
- cant++;
+ msg+="Football "
  }
  if (document.getElementById('checkbox2').checked) {
- cant++;
+  msg+="Tennis "
  }
  if (document.getElementById('checkbox3').checked) {
- cant++;
+  msg+="Karate "
  }
 
- alert('Selected sports ' + cant);
+ alert('Selected sports: ' + msg);
  }
  </script> 
 <form>
@@ -31,7 +31,7 @@ function countSelected() {
  <br>
  <input type="checkbox" id="checkbox3">Karate
  <br>
- <input type="button" value="Count" onClick="countSelected()">
+ <input type="button" value="Show" onClick="countSelected()">
  </form>
  </body>
  </html>
