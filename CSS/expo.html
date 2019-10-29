@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Transitions Animations Columns</title>
+	<link rel="stylesheet" href="">
+
+	<style>
+
+        @keyframes example {
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;
+
+border-radius: 100%;
+			width: 600px;
+  }
+  100% {background-color: green;}
+}
+
+
+		#caja{
+
+			width: 200px;
+			height: 200px;
+			margin: 100px;
+			background-color: blue;
+			transition: all 4s ease;
+
+		
+		}
+		#caja:hover{
+         background-color: darkred;
+         outline: 15px solid red;
+         outline-offset: 30px;
+  
+
+		}
+				#col{
+			  columns: 300px;
+			  column-count: 4;
+			  column-gap: 10px;
+			  column-rule: 4px double #ff00ff;
+			
+		}
+
+      
+	</style>
+
+</head>
+<body>
+	<div id="caja">
+		
+	</div>
+	
+
+	
+</body>
+</html>
+
+
+
+<!-- 
+
+	#caja{
+			width: 200px;
+			height: 200px;
+			margin: 100px;
+			background-color: blue;
+			transition: background-color 4s ease;
+
+			transition-property
+			transition-duration
+            transition-timing-function
+			transition-delay
+		}
+		#caja:hover{
+			background-color: darkred;
+			border-radius: 100%;
+			width: 600px;
+			transform: rotate(45deg);
+		}
+
+
+
+@keyframes example {
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+	#caja{
+			width: 200px;
+			height: 200px;
+			margin: 100px;
+			background-color: blue;
+		}
+		#caja:hover{
+         animation-name: example;
+         animation-duration: 5s;
+         animation-timing-function: linear;
+         animation-delay: 2s;
+         animation-iteration-count: infinite;
+         number|infinite|initial|inherit;
+         animation-direction: alternate;
+         normal|reverse|alternate|alternate-reverse|initial|inherit;
+
+		}
+
+div {
+  animation: example 5s linear 2s infinite alternate;
+}
+
+		#col{
+			  columns: 300px;
+			  column-count: 4;
+			  column-gap: 10px;
+			  column-rule: 4px double #ff00ff;
+			  column-fill: balance|auto|initial|inherit;
+		}
+      
+        
+         box-sizing: 
+         content-box
+         only the content. Border and padding are not included
+
+         border-box
+         The width and height properties (and min/max properties) includes content, padding and border
+
+         initial|inherit;
+
+
+
+         outline: 20px solid yellow;
+         outline-offset:20px;
+
+
+
+
+ -->

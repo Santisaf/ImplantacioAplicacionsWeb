@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ACT02</title>
+  <link rel="stylesheet" href="">
+
+   <!-- JQUERY -->
+   <script src="../jquery-3.4.1.js"></script>
+
+</head>
+<body>
+	<h1>Heading 1</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus atque saepe distinctio facere, nobis nemo nesciunt vel sed deleniti numquam sapiente ea dolorum dolorem tempora, architecto cum neque unde! Pariatur.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus atque saepe distinctio facere, nobis nemo nesciunt vel sed deleniti numquam sapiente ea dolorum dolorem tempora, architecto cum neque unde! Pariatur.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus atque saepe distinctio facere, nobis nemo nesciunt vel sed deleniti numquam sapiente ea dolorum dolorem tempora, architecto cum neque unde! Pariatur.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus atque saepe distinctio facere, nobis nemo nesciunt vel sed deleniti numquam sapiente ea dolorum dolorem tempora, architecto cum neque unde! Pariatur.</p>  
+  <button id="button1">Font 10 px</button>
+  <button id="button2">Font 15 px</button>
+  <button id="button3">Font 20 px</button>
+
+<script>
+   $(document).ready(function(){
+      
+      $("#button1").click(function(){
+      	$("p:odd").css("font-size", "10px");
+      });  
+      $("#button2").click(function(){
+        $("p:odd").css("font-size", "15px");
+      });  
+        $("#button3").click(function(){
+        $("p:odd").css("font-size", "20px");
+      });  
+   
+   });
+
+</script>
+
+</body>
+ </html>
