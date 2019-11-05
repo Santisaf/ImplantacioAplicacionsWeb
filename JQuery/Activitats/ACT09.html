@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ACT09</title>
+  <link rel="stylesheet" href="">
+
+   <!-- JQUERY -->
+
+   <script src="../jquery-3.4.1.js"></script>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odit reprehenderit, tenetur officiis qui, perferendis magnam deleniti explicabo esse eligendi fuga perspiciatis iusto voluptates at placeat temporibus. Similique, ipsa, esse?</p>
+
+  <br><br>
+  <button id="b1">Show Head</button>
+  <button id="b2">Show Body</button>
+
+
+  
+<script>
+   $(document).ready(function(){
+      
+      $("#b1").click(function(){
+      	alert($("head").html());
+      });  
+      $("#b2").click(function(){
+        alert($("body").html());
+      });   
+
+     
+   });
+
+</script>
+
+</body>
+ </html>

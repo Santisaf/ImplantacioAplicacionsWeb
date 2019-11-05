@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ACT07</title>
+  <link rel="stylesheet" href="">
+
+   <!-- JQUERY -->
+   <script src="../jquery-3.4.1.js"></script>
+
+</head>
+<body>
+
+	<a href="">LINK</a>
+  <br><br>
+  <button id="g">Link Google</button>
+  <button id="y">Link Youtube</button>
+  <button id="m">Link Marca</button>
+  
+<script>
+   $(document).ready(function(){
+      
+      $("#g").click(function(){
+      	$("a").attr("href","https://www.google.es");
+      });  
+      $("#y").click(function(){
+        $("a").attr("href","https://www.youtube.es");
+      });   
+      $("#m").click(function(){
+        $("a").attr("href","https://www.marca.com");
+      });    
+
+     
+   });
+
+</script>
+
+</body>
+ </html>
