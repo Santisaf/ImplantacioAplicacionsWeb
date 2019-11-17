@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ACT15</title>
+  <link rel="stylesheet" href="">
+  <style>  
+
+  .cuadro{
+    background-color: lightsalmon;
+    width: 800px;
+    height: 70px;
+    margin: 20px;
+    border: 1px solid black;
+  }
+
+    .mod{
+    width: 250px;
+    height: 250px;
+  }
+
+
+
+  </style>
+
+   <!-- JQUERY -->
+
+   <script src="../jquery-3.4.1.js"></script>
+
+</head>
+<body>
+
+<div class="cuadro">
+  
+
+</div> 
+<script>
+   $(document).ready(function(){
+      
+      $(".cuadro").dblclick(function(event){
+      	$(this).toggleClass( "mod" );
+        })    
+
+   });
+
+</script>
+
+</body>
+ </html>

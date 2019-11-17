@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ACT12</title>
+  <link rel="stylesheet" href="">
+  <style>
+      tr{
+        background-color: yellow;
+        padding: 10px;
+      }
+  </style>
+
+   <!-- JQUERY -->
+
+   <script src="../jquery-3.4.1.js"></script>
+
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <td>casella 1</td>
+      <td>casella 2</td>
+    </tr>
+       <tr>
+      <td>casella 3</td>
+      <td>casella 4</td>
+    </tr>
+     
+  </table>
+
+  
+<script>
+   $(document).ready(function(){
+      
+      $("td").hover(function(){
+      	$(this).css("backgroundColor","red");
+        },
+        function(){
+        $(this).css("backgroundColor","yellow");
+      });  
+ 
+   });
+
+</script>
+
+</body>
+ </html>

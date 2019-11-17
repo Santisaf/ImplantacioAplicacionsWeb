@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ACT16</title>
+  <link rel="stylesheet" href="">
+  <style>  
+
+  </style>
+
+   <!-- JQUERY -->
+
+   <script src="../jquery-3.4.1.js"></script>
+
+</head>
+<body>
+
+<form >
+  <input type="text">
+  <input type="text">
+
+</form>
+<script>
+   $(document).ready(function(){
+      
+      $("input").focus(function(event){
+      	$(this).css( "color","red" );
+        })   
+      $("input").blur(function(event){
+        $(this).css( "color","blue" );
+        })      
+
+   });
+
+</script>
+
+</body>
+ </html>
