@@ -9,19 +9,20 @@
    <!-- JQUERY -->
 
    <script src="../jquery-3.4.1.js"></script>
-
 </head>
 <body>
-    Lorem <strong>ipsum</strong>  dolor sit amet, consectetur adipisicing elit. Sint odit reprehenderit, tenetur officiis qui, perferendis <strong>magnam</strong>  deleniti explicabo esse eligendi fuga perspiciatis iusto voluptates at placeat temporibus. Similique, ipsa, esse?. Lorem ipsum dolor sit amet, <strong>consectetur</strong>  adipisicing elit. Eligendi temporibus mollitia provident facilis <strong>quasi</strong>  nobis ab alias obcaecati quam, est officia, aperiam repellat praesentium atque perspiciatis <strong>eveniet</strong>  ad necessitatibus adipisci.
-
+   <button id="bt1">Show head</button>
+   <button id="bt2">Show body</button>
   
 <script>
    $(document).ready(function(){
       
-      $("strong").click(function(){
-      	$(this).hide();
+      $("#bt1").click(function(){
+        alert($("head").html());
       });  
-     
+      $("#bt2").click(function(){
+        alert($("body").html());
+      });     
    });
 
 </script>

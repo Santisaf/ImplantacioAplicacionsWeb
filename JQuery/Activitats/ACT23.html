@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ACT23</title>
+  <link rel="stylesheet" href="">
+  <style>  
+
+  </style>
+
+   <!-- JQUERY -->
+
+   <script src="../jquery-3.4.1.js"></script>
+   <script>
+   $(document).ready(function(){
+      
+          $("li").each(function(){
+            var str = $(this).text();
+            if (str.indexOf(".es") > 0){
+              $(this).css("background-color","yellow")
+            }
+        }); 
+    
+   });
+
+</script>
+
+</head>
+<body>
+
+<ol>
+  <li><a href="https://www.marca.com">www.marca.com</a></li>
+  <li><a href="https://www.google.es">www.google.es</a></li>
+  <li><a href="https://elpais.com">elpais.com</a></li>
+  <li><a href="https://openwebinars.net/">openwebinars.net</a></li>
+  <li><a href="http://www.rtve.es/">www.rtve.es</a></li>
+  <li><a href="https://www.telecinco.es/">www.telecinco.es</a></li>
+  <li><a href="https://www.manacor.org/ca">www.manacor.org</a></li>
+</ol>
+
+
+
+
+</body>
+ </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Plantilla</title>
+	<link rel="stylesheet" href="bootstrap-4.3.1/css/bootstrap.min.css">
+	<style>
+		textarea{
+			max-height: 225px;
+		}
+
+	</style>
+</head>
+<body class="bg-light">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+		<div class="col-6">	
+       <form class="form-group">
+       	<div class="row mt-2">
+          <textarea class="form-control" rows="4" placeholder="Comentario"></textarea>
+        </div>
+        <div class="row d-flex justify-content-end mt-3">
+          <input type="button" class="btn btn-primary" value="Comentar">
+         </div>
+       </form>
+       <hr>
+         <div class="media">
+  <img src="http://lorempixel.com/64/64" class="mr-3" alt="...">
+  <div class="media-body">
+  	
+    <h5 class="mt-0 text-primary">Nala <small class="text-muted">18:15, Hoy</small></h5> 
+    <p class="text-justify">
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati architecto quaerat facere blanditiis tempora sequi nulla accusamus, possimus cum necessitatibus suscipit quia autem mollitia, similique quisquam molestias. Vel unde, blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium officia ipsum velit nobis omnis reprehenderit doloremque maxime, non, sit amet quod ullam perferendis tempora, obcaecati quas, quaerat molestias rerum qui?
+   </p>
+     <div class="row d-flex justify-content-end ">
+   <p><a href="#" class="text-muted mr-3"> Responder </a></p>
+    <p><a href="#" class="text-muted mr-3"> Editar </a></p>
+     <p><a href="#" class="text-muted mr-3"> Borrar </a></p>
+     </div>
+   <hr>  
+    <div id="nala" class="media mt-3">
+      <a class="mr-3" href="#">
+        <img src="http://lorempixel.com/64/64" class="mr-3" alt="...">
+      </a>
+      <div class="media-body">
+        <h5 class="mt-0 text-primary">Inusyasha <small class="text-muted">18:15, Hoy</small></h5>
+        <p class="text-justify">
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis autem assumenda, numquam expedita! Eius enim cupiditate error nihil perferendis voluptatum, odio impedit! Quos corporis rerum unde corrupti quidem architecto animi.
+        </p>	
+    <div class="row d-flex justify-content-end ">
+   <p><a href="#" class="text-muted mr-3"> Responder </a></p>
+    <p><a href="#" class="text-muted mr-3"> Editar </a></p>
+     <p><a href="#" class="text-muted mr-3"> Borrar </a></p>
+     </div>
+     </div>
+    </div>
+       <hr>  
+      <div id="end" class="media mt-3">
+      <a class="mr-3" href="#">
+        <img src="http://lorempixel.com/64/64" class="mr-3" alt="...">
+      </a>
+      <div  class="media-body">
+        <h5 class="mt-0 text-primary">Inusyasha <small class="text-muted">18:15, Hoy</small></h5>
+        <p class="text-justify">
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque perspiciatis incidunt at esse eligendi debitis eius quos vitae quisquam maiores minima sed, dolores magni ab repudiandae maxime cumque aut, reprehenderit.
+        </p>
+           <div class="row float-right mt-4">
+   <p><a href="#" class="text-muted mr-3"> Responder </a></p>
+    <p><a href="#" class="text-muted mr-3"> Editar </a></p>
+     <p><a href="#" class="text-muted mr-3"> Borrar </a></p>
+     </div>
+     
+      </div>
+    </div>
+      <hr>  
+  </div>
+</div>
+</div>
+</div>
+
+	</div>   
+	<script src="bootstrap-4.3.1/js/jquery-3.4.1.js"></script>
+    <script src="bootstrap-4.3.1/js/bootstrap.min.js"></script>
+<script id="template" type="text/x-custom-template">
+   <div id="nala" class="media mt-3">
+      <a class="mr-3" href="#">
+        <img src="http://lorempixel.com/64/64" class="mr-3" alt="...">
+      </a>
+      <div  class="media-body">
+        <h5 class="mt-0 text-primary">Inusyasha <small id="hora" class="text-muted">18:15, Hoy</small></h5>
+        <p id="comentarios" class="text-justify">
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque perspiciatis incidunt at esse eligendi debitis eius quos vitae quisquam maiores minima sed, dolores magni ab repudiandae maxime cumque aut, reprehenderit.
+        </p>
+           <div class="row float-right mt-4">
+   <p><a href="#" class="text-muted mr-3"> Responder </a></p>
+    <p><a href="#" class="text-muted mr-3"> Editar </a></p>
+     <p><a href="#" class="text-muted mr-3"> Borrar </a></p>
+     </div>
+     
+      </div>
+    </div>
+</script>    
+<script>   
+   $(document).ready(function(){
+
+      var template = $('#template').html();
+      var hora = new Date();
+
+      
+      $("input").click(function(){
+      	
+        $("#nala").before(template);
+       var coment= $("textarea").val();
+       $("#comentarios").text(coment);
+       $("textarea").val("");
+       $("#hora").text(hora.getHours() + ":" + hora.getMinutes() + ", Hoy");
+
+        });  
+    
+   }); 
+</script>
+</body>
+</html>
