@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+	<!--
+	Formulari per introduir la informació de matances:
+		Tros: (input text)
+		Classe: (select) sobrassada / botifarrons
+		Kg: (input number)
+	Definir la classe Tros
+	Definir dos Arrays per Sobrassada / Botifarrons
+	Afegir Tros a l'Array corresponent
+	Calcular el total del Pes sumant els dos arrays
+	Visualitzar cada array en un div diferent:
+		L'Array de Sobrassada en una taula TABLE
+			Les files TR amb un pes>5kg tenen color vermell
+		L'Array de Botifarrons en una llista UL
+			Els listItems amb pes < 5kg tenen el text dins un bold <b>
+	Compensar el pes dels trossos dels 2 arrays (restant 0.5 kg a tots els trossos)
+-->
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-6">
+		<form class="form-group">
+	<label for="inputtros">Tros :</label> 
+	<input type="text" id="inputtros" class="form-control"/><br/>
+	<label for="tipo">Classe :</label>
+	<select id="tipo" class="form-control">
+				<option value="Sobrassada">Sobrassada</option>
+				<option value="Botifarro">Botifarro</option>
+			</select><br/>
+	<label for="inputkg">KG :</label>
+	<input type="number" id="inputkg" class="form-control"/><br/>
+	</form>
+	   </div>
+	   <div class="col-3">
+	   	<img src="http://cansoler-mallorca.com/wp-content/uploads/2016/05/botifarro.jpg" width="250px" class="rounded">
+	   	</div>
+	   	   <div class="col-3 d-flex align-items-center">
+	   	   	<h2 class="text-center display-4 ">Control Matances</h2>
+	   	   </div>
+	  </div>
+<div class="row">
+	<div class="col-6">
+		<button class="btn btn-success" id="b1">Afegir</button>
+		<button class="btn btn-success" id="b2">Visualitzar</button>
+		<button class="btn btn-success" id="b3">Total</button>
+		<button class="btn btn-success" id="b4">Compensar</button>
+		<button class="btn btn-success" id="b5">Ordenar</button>
+    </div>
+	<div class="col-6 border align-items-center p-2">
+	<h5 id="vis3" class="ml-2"></h5>
+	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="col-6">
+		<h3>Sobrassades</h3>
+		<table class="table">
+	    <thead>
+         <tr>
+         <th scope="col">Tros</th>
+         <th scope="col">KG</th>
+        </tr>
+        </thead>
+        <tbody id="vis1"></tbody>
+		</table>
+		
+	</div>
+    <div  class="col-6">
+    	  <h3>Botifarrons</h3>
+    	<ul id="vis2" class="list-group list-group-flush"></ul>		
+	</div>
+
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+
+$(document).ready(function(){
+
+    var botifarrons = [];
+    var sobrassada = [];
+
+	function Tros(tros, kg){
+
+	this.tros = tros;
+	this.kg = parseFloat(kg);
+	
+	this.print = print;
+	function print(){
+		return this.tros + " - " + this.kg + " kg";
+	}
+    }
+
+    function reg(){
+		$("#vis3").text("");
+        var i = $("#inputtros").val();
+		var k = $("#inputkg").val();
+	    var producte = new Tros(i,k);
+		return producte;
+
+	    
+    }
+    
+     function printList(){
+     	$("#vis1").empty();
+     	$("#vis2").empty();
+
+      	for ( i of sobrassada ){
+
+           var newTR = $("<tr>");
+           var newTD1 = $("<td>").text(i.tros);
+           var newTD2 = $("<td>").text(i.kg);
+           newTR.append(newTD1,newTD2);
+           $("#vis1").append(newTR);
+          if ( i.kg > 5 ){
+            newTR.css("background-color","red");      
+           }
+       
+     	}
+     	    	
+     	for ( i of botifarrons ){
+     	    if ( i.kg < 5 ){
+            var newLI = $("<li>").addClass("list-group-item").html("<b>"+i.print()+"</b>");
+           }else{
+            var newLI = $("<li>").addClass("list-group-item").text(i.print());
+           }
+          
+           $("#vis2").append(newLI);
+     	}
+     }
+     
+     function total(){
+     	var total=0;   	
+     	for ( i of botifarrons ){
+           total+=i.kg;
+     	}
+        for ( i of sobrassada ){
+           total+=i.kg;
+     	}
+     	$("#vis3").text("Total kg: "+total).css("color","black");
+     }
+
+     function compensar(){
+     	var cont=0;
+        for ( i of botifarrons ){
+           i.kg-=0.5;
+           cont++;
+     	}
+        for ( i of sobrassada ){
+           i.kg-=0.5;
+           cont++;
+     	}
+     	$("#vis3").text("Trosos compensats: "+ cont).css("color","black");
+     	printList();
+
+     }
+
+
+    $("#b1").click(function(){
+        var i = $("#inputtros").val();
+		var k = $("#inputkg").val();
+    	if ( i =="" || k ==""){
+		$("#vis3").text("No pot haver camps buits !!").css("color","red");
+	    }else{   
+		var p = reg();
+		var t = $("#tipo").val();
+		t == "Sobrassada" ? sobrassada.push(p):botifarrons.push(p);
+		$("#inputtros").val("");
+		$("#inputkg").val("");
+		printList();
+	    }
+	});
+
+	$("#b2").click(function(){
+		printList();
+	});
+	
+	$("#b3").click(function(){
+		total();
+	});
+	
+	$("#b4").click(function(){
+		compensar();
+	});
+	$("#b5").click(function(){
+		sobrassada.sort(function(a,b){
+			return a.kg-b.kg;
+			});
+		botifarrons.sort(function(a,b){
+			return a.kg-b.kg;
+			});
+		printList();
+
+	});
+	
+});
+
+</script>
+</body>
+</html>
