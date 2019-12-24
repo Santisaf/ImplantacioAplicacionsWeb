@@ -47,7 +47,7 @@ Altres i presentació (1,5 punts)
 -->
 
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <!-- Required meta tags -->
@@ -58,26 +58,65 @@ Altres i presentació (1,5 punts)
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>Aventuras gráficas PC</title>
+   <style>
+      
+      nav{
+        opacity: 0.8;
+      }
+
+    
+     .carousel-item img{
+
+       min-height: 200px; 
+     
+
+       }
+     }
+   </style>  
+
   </head>
   <body>
-    <div class="container">
-    <h1 class="display-4 d-flex justify-content-center my-2">Aventuras gráficas para PC</h1>
+    
 
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+        <!-- *************************       MODAL     *********************************** -->
+  
+   <div class="container-fluid">
+    <div id="myModal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cookies</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Utilizamos cookies de terceros para generar estadísticas de audiencia y mostrar publicidad personalizada analizando tu navegación. Si sigues navegando estarás aceptando su uso.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="salir" type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+        <!-- *************************       NAVBAR      *********************************** -->
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark ">
+       <h1 class="display-4 text-center text-white bg-dark">Aventuras gráficas para PC</h1>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
+    <ul class="navbar-nav mt-2 mt-lg-0">
+      <li class="nav-item mx-5">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item mx-5">
         <a class="nav-link" href="#">Link</a>
       </li>
- <li class="nav-item dropdown">
+ <li class="nav-item dropdown mx-5">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown link
         </a>
@@ -88,40 +127,39 @@ Altres i presentació (1,5 punts)
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
-</nav>
+</nav> 
+
+     <!-- *************************       CAROUSEL       *********************************** -->
 
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
+      <img src="https://clickspeedtest.com/content/images//the-secret-of-monkey-island.jpg" class="d-block w-100" alt="...">
+ 
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+      <img src="https://i.ytimg.com/vi/VrI1elX4GWA/maxresdefault.jpg" class="d-block w-100" alt="...">
+
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </div>
+      <img src="https://i.ytimg.com/vi/uoYRpEnHM8c/maxresdefault.jpg" class="d-block w-100" alt="...">
+
+    </div>
+        <div class="carousel-item">
+      <img src="https://i.ytimg.com/vi/SuPW655TABQ/maxresdefault.jpg" class="d-block w-100" alt="...">
+ 
+    </div>
+        <div class="carousel-item">
+      <img src="http://images.nintendolife.com/news/2015/04/fan_ports_hideo_kojimas_cyberpunk_classic_snatcher_to_the_virtual_boy/1280x720.jpg" class="d-block w-100" alt="...">
+ 
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -134,14 +172,217 @@ Altres i presentació (1,5 punts)
   </a>
 </div>
 
+      <!-- *************************        TEXTO         *********************************** -->
+  <br>  
+ 
+  <div class="container-md">    
+  <section>
+    <h3 class="bg-dark text-white text-center p-2">Ranking de las mejores aventuras gráficas</h3>
+    <div class="row">
+      <div class="col-md-6 col-12">    
+
+        <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Título</th>
+      <th scope="col">Año creación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>The Secret of Monkey Island</td>
+      <td>1990</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Maniac Mansion II: Day of the Tentacle</td>
+      <td>1993</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Indiana Jones and the Fate of Atlantis</td>
+      <td>1992</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Grim Fandango</td>
+      <td>1998</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Snatcher</td>
+      <td>1994</td>
+    </tr>    
+    <tr>
+      <th scope="row">6</th>
+      <td>Broken Sword: La Leyenda de los Templarios</td>
+      <td>1996</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>The Longest Journey</td>
+      <td>2006</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Gabriel Knight: Sins of The Fathers</td>
+      <td>1993</td>
+    </tr> 
+    <tr>
+      <th scope="row">9</th>
+      <td>Heavy Rain</td>
+      <td>2010</td>
+    </tr> 
+    <tr>
+      <th scope="row">10</th>
+      <td>The Walking Dead</td>
+      <td>2012</td>
+    </tr>                         
+  </tbody>
+</table>
+       
+        </div>
+      <div class="col-md-6 col-12">
+         <p class="text-justify bg-warning p-2">
+          La aventura gráfica es el género del mundo de los videojuegos interactivos cuyo antecedente más inmediato son las aventuras conversacionales de los años 1980 y cuya edad puede establecerse en la primera mitad de la década de 1990. La dinámica de este tipo de experiencia consiste en ir avanzando por el mismo a través de la resolución de diversos rompecabezas, planteados como situaciones que se suceden en la historia, interactuando con personajes y objetos a través de un menú de acciones o interfaz similar, utilizando un cursor para mover al personaje y realizar las distintas acciones. El concepto clásico de aventura gráfica incluía la visión de los personajes en tercera persona la mayor parte del juego, aunque algunas de las aventuras gráficas más importantes se planteasen en primera persona. <br>
+          Hablar de las mejores aventuras gráficas de la historia es hablar de LucasArts, Sierra y, más recientemente, Telltale Games. Sierra fue la pionera, la que estableció las bases y dio forma a este género en el que la exploración y los puzzles se anteponen a la acción directa. Sin embargo, fue LucasArts la encargada de encumbar el género a su edad dorada, dejándonos joyas que perduran en la mente del colectivo y se sitúan entre los mejores juegos de la historia. <br> Pero todo lo bueno llega a su fin, y tras la edad dorada vino una época de oscuridad en la que solo unos pocos fueron capaces de conseguir que la luz no se extinguiera del todo. Fue entonces, desvanecida toda esperanza, cuand Telltale Games dio con el elixir mágico para traer de vuelta a la vida a las aventuras gráficas: decisiones morales, formato episódico y precio asequible. ¿Será esta su segunda edad de oro? Echadle un vistazo a las mejores aventuras gráficas y decididlo vosotros mismos.</p>
+        
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-12">  
+    <h5 class="text-center  d-md-inline-block p-2 border border-warning"><span class="badge badge-secondary mr-2">10 </span> The Walking Dead</h5>
+    <p class="text-justify bg-warning p-2">Tras probar suerte con Jurassic Park y Regreso al Futuro, Telltale Games decidió pasarse al lado de los muertos vivientes de The Walking Dead. Poco imaginaba el estudio que el título basado en el universo creado por Robert Kirkman se convertiría en uno de los juegos más aclamados de la generación, a merced de un duo protagonista con el que es imposible no encariñarse y algunas de las deciones morales más difíciles que hemos tenido que tomar en videojuego alguno.</p>
+      </div>
+      <div class="col-lg-6 col-12">  
+    <h5 class="text-center  d-md-inline-block p-2 border border-warning"><span class="badge badge-secondary mr-2">9 </span> Heavy Rain</h5>
+    <p class="text-justify bg-warning p-2">¿Es una aventura gráfica? ¿Es una película interactiva? Sea lo que sea, no cabe duda de que Heavy Rain es capaz de atrapar hasta al jugador más desinteresado dentro de su red de intrigas, misterios y muertes sin explicación, todo ello adornado con uno de los apartados gráficos más imponentes de todo el catálogo de PS3. Y eso, por no hablar de que el momento en que se descubre la identidad del asesino del Origami está entre los más 'WTF' que hemos tenido el placer de experimentar.</p>
+       </div>
+     </div>
+     <div class="row">
+      <div class="col-lg-6 col-12">     
+    <h5 class="text-center  d-md-inline-block p-2 border border-warning"><span class="badge badge-secondary mr-2">8 </span> Gabriel Knight: Sins of The Fathers</h5>
+    <p class="text-justify bg-warning p-2">De la noche a la mañana, Gabriel Knight pasó de ser un escritor en busca de una nueva historia para escribir un libro... A un inquisidor de los tiempos modernos que debe resolver crímenes sobrenaturales para poner fin a una maldición que ha estado acosando a su familia de generación en generación. Suerte que Gabriel cuenta con nuestra ayuda para sobrevivir a los días en que está dividida la aventura, y con nuestro buen juicio (o no) para tomar decisiones peliagudas.</p>
+    </div>
+    <div class="col-lg-6 col-12">  
+    <h5 class="text-center d-md-inline-block p-2 border border-warning"><span class="badge badge-secondary mr-2">7 </span> The Longest Journey</h5>
+    <p class="text-justify bg-warning p-2">Haciendo honor a su nombre, The Longest Journey es una de las aventuras gráficas más largas que encontaréis ahí fuera. La apasionante historia de April Ryan y su epopeya para establecer el equilibrio entre Arcadia y Stark consigió transportarnos a un mundo de magia y fantasía caracterizado por un nivel de madurez pocas veces visto en el género... Y algún que otro puzzle desquiciante.</p>
+    </div>
+    </div>
+     <div class="row">
+      <div class="col-lg-6 col-12">  
+    <h5 class="text-center  d-md-inline-block p-2 border border-warning"><span class="badge badge-secondary mr-2">6 </span> Broken Sword: La Leyenda de los Templarios</h5>
+    <p class="text-justify bg-warning p-2">Y de mundos de fantasía pasamos a localizaciones reales (y ficticias) de Europa, donde tuvimos que ayudar a George Stobbart a desentrañar una conspiración relacionada con los caballeros templarios. Una historia que atrapa de principio a fin, un apartado gráfico que recuerda a las mejores películas de animación y una banda sonora de escándalo formaban la que es una de las aventuras gráficas más influyentes de la historia: Broken Sword.</p>
+     </div>
+    <div class="col-lg-6 col-12"> 
+    <h5 class="text-center  d-md-inline-block p-2 border border-warning"><span class="badge badge-secondary mr-2">5 </span> Snatcher</h5>
+    <p class="text-justify bg-warning p-2">Aunque hoy le conozcamos casi exclusivamente por la saga Metal Gear, Hideo Kojima ha demostrado a lo largo de su carrera ser un auténtico genio en esto de los videojuegos. Y buena prueba de ello es el sensacional Snatcher, una obra que aúna lo mejor del cyberpunk propio de Blade Runner con el humor y la atención al detalle que han hecho famoso al creativo japonés. Existen varias versiones (algunas de ellas horriblemente censuradas) así que nuestra recomendación es que, si os lo podéis permitir, os hagáis con la versión de Mega-CD. Creednos, no os arrepentiréis. </p>
+     </div>
+     </div>
+     <div class="row">
+      <div class="col-lg-6 col-12">  
+    <h5 class="text-center  d-md-inline-block p-2 border border-warning"><span class="badge badge-secondary mr-2">4 </span> Grim Fandango</h5>
+    <p class="text-justify bg-warning p-2">¿Qué obtienes si mezclas elementos de la cultura azteca con el mejor cine negro, y lo sazonas con el buen hacer de LucasArts? Un aventura gráfica de la talla de Grim Fandango. ¿Quién hubiese imaginado que la historia de un agente de viajes en los huesos calaría tan hondo en el corazón de los jugadores? De hecho, fue un auténtico fracaso en ventas cuando se puso a la venta... Pero como todo lo bueno, el tiempo lo ha puesto en el lugar que se merece.</p>
+     </div>
+    <div class="col-lg-6 col-12"> 
+    <h5 class="text-center  d-md-inline-block p-2 border border-warning"><span class="badge badge-secondary mr-2">3 </span> Indiana Jones and the Fate of Atlantis</h5>
+    <p class="text-justify bg-warning p-2">No sólo estamos ante una de las mejores aventuras gráficas jamas realizadas: Indiana Jones and the Fate of Atlantis es el mejor juego del afamado arqueólogo que hemos tenido el placer de degustar, hasta el punto de que muchos fans lo consideran la auténtica cuarta película de Indy...</p>
+     </div>
+     </div>
+     <div class="row">
+      <div class="col-lg-6 col-12">  
+   <h5 class="text-center  d-md-inline-block p-2 border border-warning"><span class="badge badge-secondary mr-2">2</span> Maniac Mansion II: Day of the Tentacle</h5>
+    <p class="text-justify bg-warning p-2">Al empezar el reportaje hablábamos de cómo en Life is Strange los poderes temporales de la protagonista cambiaban por completo la forma de jugar. Pero 22 años antes, Tim Schafer ya pensaba en viajes en el tiempo... Solo que utilizando un retrete. Así es Day of the Tentacle: una odisea a través del tiempo y el espacio en la que se suceden algunos de los mejores gags que hemos visto en videojuego alguno. ¿Tenéis ganas de echarle el guante a la edición especial?</p>
+    </div>
+     <div class="col-lg-6 col-12">  
+    <h5 class="text-center  d-md-inline-block p-2 border border-warning"><span class="badge badge-secondary mr-2">1 </span> The Secret of Monkey Island</h5>
+    <p class="text-justify bg-warning p-2">Profundo en el Caribe... Se cuenta la historia de un muchacho de nombre impronunciable que quiso convertirse en pirata a toda costa. Para conseguirlo, tuvo que hacer frente a puzzles absurdamente ingeniosos y a bucaneros diestros en el arte de la espada. Pero cuentan que, pese a no ser un gran guerrero, su pico de oro hacía temblar a los enemigos... De la risa. Dicen que al final cumplió su sueño y se convirtió en el terror de los siete mares, un pirata con los bolsillos a rebosar de riquezas... Aunque también hemos oido que quiso demostrar su capacidad para aguantar 10 minutos sin respirar bajo el agua y no lo consiguió. Sea como sea, su historia es tan grande que merece ser pasada de generación generación.</p><br>
+    </div>
+    </div>
+  </section>  
+
+     <!-- *************************        VIDEO          *********************************** -->
+
+<div class="embed-responsive embed-responsive-16by9 border border-warning">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WjvD3C_nvBk?rel=0&showinfo=0&controls=1&autoplay=1" allowfullscreen></iframe>
+</div>
+      <!-- *************************        MASONRY CARDS          *********************************** -->
+
+<div class="card-columns bg-warning p-3 mt-5">
+  <div class="card">
+    <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/855/public/media/image/2015/09/120765-secret-monkey-island-cumple-25-anos.jpg?itok=k5usflDJ" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Disquetes de 3½ pulgadas</h5>
+      <p class="card-text">LucasArts decidió añadir un guiño -o mofa- sobre los videojuegos que ocupaban muchos disquetes... al llegar Guybrush a la pantalla del laberinto en el bosque, aparecía un mensaje para insertar el disco 22. Este mensaje desconcertaba al jugador, que pulsaba una tecla, y aparecía el mensaje para introducir el disco 36... a continuación el disco 114. Al no introducir ningún disco, el protagonista del videojuego Guybrush terminaba por decir: «será mejor que me salte esta parte</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://www.guiltybit.com/wp-content/uploads/2015/02/Grim-Fandango-Remastered-Domino.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Grim Fandango</h5>
+      <p class="card-text">Grim Fandango combina elementos de la mitología mexica en la creencia en la muerte, el estilo de películas de film noir,1​ incluyendo El halcón maltés, On the Waterfront y Casablanca,2​ para crear el ambiente del juego en torno a la "Tierra de los muertos", a través de la cual las almas recientemente fallecidas, representadas en el juego como personajes calaca, deben viajar antes de alcanzar su destino final, el Noveno Infierno. La historia sigue al protagonista, el agente de viajes Manuel "Manny" Calavera, mientras intenta salvar a Mercedes Meche Colomar, una recién llegada de alma virtuosa, durante su largo viaje.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+  
+    <div class="card-body">
+        <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2015/09/120763-secret-monkey-island-cumple-25-anos.jpg?itok=QHNoSVUj" class="card-img-top" alt="...">
+      <h5 class="card-title">Guybrush Threepwood</h5>
+      <p class="card-text">El juego de «Monkey Island» tenía un particular protagonista -aspirante a pirata- llamado Guybrush Threepwood que era toda una fuente de humor y de guiños. Realmente el juego entero era un manojo de guiños con un humor pelicular, a veces sarcástico. Inmediatamente se convirtió en un éxito y creó una saga de videojuegos: en total ocho juegos entre 1990 y 2011, tres de ellos ediciones especiales.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card bg-dark text-white text-center p-3">
+    <blockquote class="blockquote mb-0">
+      <p>La tecnología llamada «SCUMM» fue creada por Lucasfilms Games en el año 1987 para desarrollar el videojuego Maniac Mansion.</p>
+    </blockquote>
+  </div>
+  <div class="card text-center">
+      <img src="https://as.com/meristation/imagenes/2018/04/01/analisis/1522562400_580911_1531816790_sumario_normal.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Indiana Jones and the Fate of Atlantis</h5>
+      <p class="card-text">Indiana Jones and the Fate of Atlantis (traducido literalmente como Indiana Jones y el destino de la Atlántida) es un videojuego del tipo aventura gráfica desarrollado y distribuido por la compañía LucasArts en el año 1992. Fue el séptimo videojuego en utilizar el motor SCUMM..</p>
+      <p class="card-text"><small class="text-muted">Last updated 13 days ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://www.hrkgame.com/media/games/.thumbnails/header_WQJ8DYi.jpg/header_WQJ8DYi-460x215.jpg" class="card-img-top" alt="...">
+  </div>
+  <div class="card p-3 text-right">
+    <blockquote class="blockquote mb-0">
+      <p>LucasArts solo incluyo el guiño en la primera versión en disquete de «The Secret of Monkey Island»... recibió tantas llamadas de usuarios solicitando los disquetes pedidos en el juego, que no salió rentable mantener el guiño en siguientes versiones.</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Fuente <cite title="Source Title">Parcela digital</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+     <img src="http://xtremeretro.com/wp-content/uploads/2017/06/8-Maniac-Mansion-2-Day-of-the-Tentacle-DOS-LucasArts-1993-Xtreme-Retro.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Maniac Mansion 2</h5>
+      <p class="card-text">Maniac Mansion 2: Day of the Tentacle (en español, Mansión maníaca 2: Día del tentáculo), también conocida como Day of the Tentacle, es una aventura gráfica, originalmente publicada en 1993, por LucasArts.</p>
+      <p class="card-text"><small class="text-muted">Last updated 19 mins ago</small></p>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Broken Sword: La leyenda de los templarios</h5>
+      <p class="card-text">Broken Sword: La leyenda de los templarios (originalmente Broken Sword: The Shadow of the Templars en inglés, y publicado en Estados Unidos como Circle of Blood) es una aventura gráfica en tercera persona, del tipo point and click que se lanzó para PC el 5 de noviembre de 1996. En diciembre de ese mismo año se lanzó para PlayStation y el 19 de marzo de 2002 para GBA. Una última reedición se ha realizado en 2009 para Nintendo DS con el subtítulo El montaje del director. Es el primero de una saga que cuenta con las secuelas Broken Sword II: Las fuerzas del mal, Broken Sword 3: El sueño del dragón, Broken Sword 4: El ángel de la muerte y Broken Sword 5: La maldición de la serpiente</p>
+      <p class="card-text"><small class="text-muted">Last updated 30 days ago</small></p>
+    </div>
+  </div>
+</div>
 
 
 
+     <!-- *************************           *********************************** -->
 
-
-
-
-
+       </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -149,5 +390,9 @@ Altres i presentació (1,5 punts)
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      setTimeout(function(){ $('#myModal').modal(); }, 4000);
+      
+    </script>
   </body>
 </html>
